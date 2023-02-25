@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.css';
-import logo from './img/logo.png'
-import code from './img/code.png'
-import coder from './img/coder.webp'
-import globe from './img/globe.avif'
-import Footer from './../components/Footer'
+import logo from '../img/logo.png'
+import code from '../img/code.png'
+import coder from '../img/coder.webp'
+import globe from '../img/globe.avif'
+import Footer from '../components/Footer/Footer.js'
 
 class Banner extends React.Component{
     render(){
@@ -79,3 +79,4 @@ const Home = () =>{
 };
 
 export default Home
+

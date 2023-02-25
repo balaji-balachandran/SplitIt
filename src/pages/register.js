@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from './img/logo.png'
-import eye from './img/eye.png'
+import logo from '../img/logo.png'
+import eye from '../img/eye.png'
 
 
 function showPassword() {
