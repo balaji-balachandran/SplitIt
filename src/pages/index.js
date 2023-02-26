@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import logo from '../img/logo.png'
+import logo from '../img/splitit-home-nobg.png'
 import code from '../img/code.png'
 import coder from '../img/coder.webp'
 import globe from '../img/globe.avif'
@@ -10,31 +10,16 @@ class Banner extends React.Component{
     render(){
         return (
         <div class="banner">
-            <Navbar />
-            <div class="company-name">CommuniPute</div>
-            <div class="tagline">Harness the power of the world's computers in an instant. Discover the power of community computing.</div>
-            <a href="login">
+            <div class="company-name">SplitIt</div>
+            <div class="tagline">Split the bill. Save the hassle.</div>
+            <a href="sign-in">
                 <div class="start-button">
                     <p> Get Started </p>
                 </div>
             </a>
-            <img id="logo" src={logo} alt="Communipute Logo"></img>
+            <img id="logo" src={logo} alt="SplitIt Home"></img>
         </div>
         );
-    }
-}
-
-class Navbar extends React.Component{
-    render(){
-        return (
-            <div class="navbar">
-            <a class="login" href="login">
-                Login
-            </a>
-            <a class="register" href="register">
-                Register
-            </a>
-        </div>);
     }
 }
 
