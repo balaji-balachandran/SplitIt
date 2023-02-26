@@ -12,6 +12,7 @@ import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import './pages/styles.css'
 import Pay from './pages/pay';
+import Contacts from './pages/contacts';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/process' element={<Dashboard />} />
         <Route path='/sign-up' element={<Register />} />
         <Route path='/sign-in' element={<Login />} />
+        <Route path='/contacts' element={<Contacts />} />
         <Route path='/pay' element={<Pay />} />
       </Routes>
     </Router>
