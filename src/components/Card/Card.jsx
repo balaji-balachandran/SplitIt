@@ -12,7 +12,9 @@ const Card = (props) => {
     <div className="radialBar">
         <span>{props.title}</span>
     </div>
-    <div className="detail">
+    <div className="detail" onClick={()=>{
+        window.location.href="/proces"
+    }}>
         <Png />
         <span>{props.value}</span>
     </div>

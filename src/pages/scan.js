@@ -58,7 +58,7 @@ function WebcamCapture() {
         <button className="button" id="capture" onClick={freezeVideo}>Capture</button>
         )}
         <button className="button" id="continue" onClick={() => {
-          setTimeout(() => {window.location.href = "/process"}, 2500);
+          setTimeout(() => {window.location.href = "/process"}, 3500);
           
         }}>Continue</button>
         </div>

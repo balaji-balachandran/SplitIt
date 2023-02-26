@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/logo.png'
+import logo from '../img/sendmon.png'
 import eye from '../img/eye.png'
 
 function showPassword() {
@@ -19,7 +19,6 @@ class BackgroundImages extends React.Component{
     render(){
         return (<div className = "banner">
             <img src={logo} alt="logo" id="login-logo-1"></img>
-            <img src={logo} alt="logo" id="login-logo-2"></img>
         </div>);
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from '../img/logo.png'
+import logo from '../img/sendmon.png'
 import eye from '../img/eye.png'
 
 
@@ -78,7 +78,6 @@ export default function Register(){
     return (<div>
                 <div className="banner">
                     <img src={logo} alt="logo" id="login-logo-1"></img>
-                    <img src={logo} alt="logo" id="login-logo-2"></img>
                 </div>
                 <div className = "registration-box">
                     <p className = "titleText">Register</p>

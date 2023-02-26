@@ -19,7 +19,7 @@ span{
     --login-width: 25vw;
     --login-size: 4 / 5;
     
-    --registerWidth: 25vw;
+    --registerWidth: 30vw;
   --registerHeight: 50vh;
   --registerPadding:20px;
   --registerMargin: 10%;
@@ -430,7 +430,7 @@ a > div > p{
   }
   
   #lastName{
-    width: calc(0.57 * var(--registerWidth) - (2*var(--registerMargin)));
+    width: calc(0.56 * var(--registerWidth) - (2*var(--registerMargin)));
     margin-left: 0px;
     position: relative;
     right:0px;
@@ -511,7 +511,7 @@ a > div > p{
     margin-left: var(--registerMargin);
     margin-right: var(--registerMargin);
     text-align: center;
-    color: white;
+    color: black;
   }
 
   /* Select Page */

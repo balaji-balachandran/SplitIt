@@ -16,7 +16,7 @@ import {
     {
       icon: UilEstate,
       heading: "Scan",
-      link: "/process",
+      link: "/scan",
     },
     {
       icon: UilUsersAlt,
