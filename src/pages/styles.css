@@ -253,7 +253,7 @@ a > div > p{
 }
 
 /* Login and Register Styling */
-
+/* 
 #login-logo-1, #login-logo-2{
     z-index: 1;
     position: absolute;
@@ -341,6 +341,104 @@ a > div > p{
   
   #confirmPassword{
     width: calc(0.89 * var(--registerWidth) - (2*var(--registerMargin)));
+    margin-right: 0px;
+    margin-bottom: 10px;
+  } */
+
+  #login-logo-1, #login-logo-2{
+    z-index: 1;
+    position: absolute;
+  }
+
+#login-logo-1{
+    transform: rotate(-20deg);
+    left:10vw;
+    top:20vh;
+    width:33vw;
+}
+
+#login-logo-2{
+    transform: rotate(40deg);
+    right: 5vw;
+    top:20vh;
+    width: 20vw;
+}
+
+.registration-box{
+    position: absolute;
+    padding: var(--registerPadding);
+    left: calc(((100vw - var(--registerWidth) - var(--registerPadding))/2) + 20vw);
+    top: calc((100vh - var(--registerHeight) - var(--registerPadding))/2);
+    width: var(--registerWidth);
+    height:auto;
+  
+    background-color: rgba(255, 255, 255, 0.54);
+    box-shadow: var(--shadow);
+  
+    border-radius:10px;
+    z-index: 2;
+  }
+  
+  .titleText{
+    text-align: center;
+    font-family: "Sora";
+    font-size: 2em;
+    padding:0px;
+    margin-bottom: 15px;
+    color: black;
+  }
+  
+  input[type=text], input[type=password]{
+  
+    background-color: rgba(167,189,242,0.3);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    margin-left: var(--registerMargin);
+    margin-right: var(--registerMargin);
+    padding-left: var(--registerInputPadding);
+    padding-right: var(--registerInputPadding);
+    width: calc(100% - 2 * var(--registerMargin));
+    font-family: 'Sora';
+    /* width: calc(var(--registerWidth) - (2*var(--registerMargin) + 2*var(--registerInputPadding)) - 25px); */
+    margin-bottom: 10px;
+  
+  }
+  
+  input[type=text]:focus{
+    outline:none;
+  }
+  
+  input[type=submit]{
+    background-color: #4189E1;
+    color: white;
+    margin-left: var(--registerMargin);
+    font-size: 1rem;
+    font-family: 'Sora';
+    font-weight: 800;
+    width: calc(100% - (2*var(--registerMargin)));
+    border:none;
+    height: 4vh;
+    padding: calc(var(--registerInputPadding)+10px);
+    border-radius: 10px;
+    transform: translate(0px, -5px);
+  }
+  
+  #firstName{
+    width: calc(0.5 * var(--registerWidth) - (2*var(--registerMargin)));
+    margin-right: 0px;
+  }
+  
+  #lastName{
+    width: calc(0.57 * var(--registerWidth) - (2*var(--registerMargin)));
+    margin-left: 0px;
+    position: relative;
+    right:0px;
+    float:right;
+  }
+  
+  #confirmPassword{
+    width: calc(0.93 * 100% - (2*var(--registerMargin)));
     margin-right: 0px;
     margin-bottom: 10px;
   }

@@ -14,6 +14,7 @@ import Process from './pages/proces';
 import './pages/styles.css'
 import Pay from './pages/pay';
 import Contacts from './pages/contacts';
+import ScanFunc from './pages/scanWeb';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/sign-in' element={<Login />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/pay' element={<Pay />} />
+        <Route path='/scan' element={<ScanFunc />} />
       </Routes>
     </Router>
   );

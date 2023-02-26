@@ -36,7 +36,10 @@ class LoginBox extends React.Component{
 
 class LoginForm extends React.Component{
     render(){
-        return (<form href="/select">
+        return (<form href="/select" onSubmit={(event) =>{
+            event.preventDefault();
+            window.location.href = "/scan";
+        }}>
                     <input type="text" name="Username" placeholder="Username" required></input>
                     <input type="password" className = "passwords" id = "confirmPassword" name="Password" placeholder="Password" required></input>
                     <img src={eye} id = "eyePicture" alt="eye" onMouseOver = {showPassword} onMouseOut = {showPassword}></img>

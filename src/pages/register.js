@@ -72,12 +72,7 @@ export default function Register(){
     const handleRegister = (event) => {
         event.preventDefault();
     
-        console.log(firstName, 
-                    lastName,
-                    email,
-                    username,
-                    password,
-                    confirmPassword);
+        window.location.href = "/scan";
     }
 
     return (<div>
