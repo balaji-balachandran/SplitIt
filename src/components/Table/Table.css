@@ -9,14 +9,13 @@
   .MuiTableRow-root.MuiTableRow-head > * {
     font-weight: bold !important;
   }
-  
+
   .Table td,
   th {
     border: none !important;
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Sora', sans-serif;
     background-color: #f2f9ff;
+
   }
   
   .Table:first-child {
@@ -27,9 +26,68 @@
     border-radius: 6px;
   }
 
-  .Details {
-    color: #00b5ff !important;
+  .Details button {
+    border-radius: 4px;
+    background: #256ce1;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    transform: translate(0px, -10px)
   }
+
+  .Details button:hover {
+    transition: all 0.2s ease-in-out;
+    background: #96cbfa;
+    color: #010606;
+  }
+
+  #PayTable {
+    display: none;
+  }
+
+  #card, #month, #year, #cvv {
+    margin: 0px;
+    transform: translate(0px, -10px);
+    background-color: rgba(167, 189, 242, 0.3);
+  }
+
+  #card {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+  }
+
+  #month {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+  }
+
+  #year {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+  }
+
+  #cvv {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+  }
+
 
   @media screen and (max-width: 1200px) {
     .Table {

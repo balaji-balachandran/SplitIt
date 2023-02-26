@@ -1,4 +1,5 @@
 import * as React from "react";
+import { makeStyles } from "@mui/material/styles";
 import Table from '@mui/material/Table';
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -7,18 +8,21 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
+import SearchBar from "../SearchBar/SearchBar";
+import BookData from "../SearchBar/Data.json";
 
 function createData(name, product, price, status) {
   return { name, product, price, status };
 }
 
 const rows = [
-  createData("Balaji", "Cereal", 8, "Paid"),
-  createData("Anshul", "Milk", 3, "Pending"),
-  createData("Yatin", "Chips", 5, "Paid"),
-  createData("Balaji", "Milk", 8, "Paid"),
+  createData("Yatin", "Fish & Chips Bowl", 9.35, "Paid"),
+  createData("Anshul", "Fish & Chips Bowl", 9.35, "Pending"),
+  createData("Yatin", "Drink", 2.07, "Pending"),
+  createData("Balaji", "Drink", 2.07, "Pending"),
+  createData("Yatin", "Fish Spycy Soup", 4.14, "Pending"),
+  createData("Anshul", "Fish Spycy Soup", 4.14, "Pending"),
 ];
-
 
 const makeStyle=(status)=>{
   if(status === 'Paid')
@@ -48,13 +52,17 @@ export default function BasicTable() {
       <div className="Table">
       <h3 className="subTitle">Breakdown</h3>
         <TableContainer
+          sx={{
+            height: 300,   
+            width: 700
+          }}
           component={Paper}
-          style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
+          style={{ boxShadow: "0px 13px 20px 0px #80808029"}}
         >
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table sx={{height: "max-content"}} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Contact</TableCell>
+                <TableCell align="center">Contact</TableCell>
                 <TableCell align="left">Product</TableCell>
                 <TableCell align="left">Price</TableCell>
                 <TableCell align="left">Status</TableCell>
@@ -67,12 +75,13 @@ export default function BasicTable() {
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
                   <TableCell component="th" scope="row">
-                    {row.name}
+                    {/* {row.name} */}
+                    <SearchBar placeholder="Enter Name" data={BookData} />
                   </TableCell>
                   <TableCell align="left">{row.product}</TableCell>
                   <TableCell align="left">${row.price}</TableCell>
                   <TableCell align="left">
-                    <span className="status" style={makeStyle(row.status)}>{row.status}</span>
+                    <span className="status" id="status" style={makeStyle(row.status)}>{row.status}</span>
                   </TableCell>
                 </TableRow>
               ))}

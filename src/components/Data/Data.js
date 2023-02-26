@@ -38,7 +38,7 @@ import {
         backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
         boxShadow: "0px 10px 20px 0px #c484f3",
       },
-      value: "Target",
+      value: "Fish & Chips Restaurant",
       png: UilMoneyWithdrawal,
     },
     {
@@ -47,16 +47,17 @@ import {
         backGround: "linear-gradient(180deg, #f6b8fc 0%, #eca7f2 100%)",
         boxShadow: "0px 10px 20px 0px #f6b8fc",
       },
-      value: "$14,270",
+      value: "$31.12",
       png: UilUsdSquare,
     },
     {
-      title: "Contacts:",
+      title: "Pending:",
       color: {
         backGround: "linear-gradient(180deg, #a7bdf2 0%, #9bb5f2 100%)",
         boxShadow: "0px 10px 20px 0px #9bb5f2",
       },
-      value: "3",
-      png: UilClipboardAlt,
+      value: "$21.77",
+    //   png: UilClipboardAlt,
+      png: UilUsdSquare,
     },
   ];

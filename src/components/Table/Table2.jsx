@@ -7,6 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
+import { display } from "@mui/system";
 
 function createData(name, product, price, status) {
   return { name, product, price, status };
@@ -14,7 +15,7 @@ function createData(name, product, price, status) {
 
 const rows = [
   // createData("Balaji", "Cereal", 8, "Paid"),
-  createData("Anshul", "Milk", 3, "Pending"),
+  createData("Balaji", "Fish & Chips Bowl", 9.35, "Pending"),
   // createData("Yatin", "Chips", 5, "Paid"),
   // createData("Balaji", "Milk", 8, "Paid"),
 ];
@@ -40,6 +41,18 @@ const makeStyle=(status)=>{
       background: '#59bfff',
       color: 'white',
     }
+  }
+}
+
+function showPayment(){
+  let paytable = document.getElementById("PayTable")
+  if(paytable.style.opacity == 0){
+    paytable.style.opacity = 1;
+    paytable.style.display = 'inline';
+  }
+  else{
+    paytable.style.opacity = 0;
+    paytable.style.display = 'none';
   }
 }
 
@@ -75,7 +88,7 @@ export default function BasicTable() {
                   <TableCell align="left">
                     <span className="status" style={makeStyle(row.status)}>{row.status}</span>
                   </TableCell>
-                  <TableCell align="left" className="Details">Pay</TableCell>
+                  <TableCell align="left" className="Details"><button type='button' onClick={showPayment}>Pay</button></TableCell>
                 </TableRow>
               ))}
             </TableBody>
